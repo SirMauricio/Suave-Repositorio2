@@ -1,0 +1,74 @@
+Nivel 0: ssh bandit0@bandit.labs.overthewire.org -p 2220 (Se agrega -p para indicar el puerto del servidor)
+
+Nivel 0-1: ls , cat readme , 
+Contraseña: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+Nivel 1-2: ssh bandit1@bandit.labs.overthewire.org -p 2220
+ls -al , cat ./- (El archivo se llama "-" almacenado en el directorio de inicio)
+Contraseña: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+Nivel 2-3: ssh bandit2@bandit.labs.overthewire.org -p 2220
+ls , cat spaces\ in\ this\ filename
+Contraseña: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+Nivel 3-4: ssh bandit3@bandit.labs.overthewire.org -p 2220
+ls inhere/ , ls inhere/ (Arroja 12 archivos) , cat inhere/.hidden (Buscamos un archivo oculto en el directorio)
+Contraseña: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+Nivel 4-5: ssh bandit4@bandit.labs.overthewire.org -p 2220
+ls -al , strings inhere/-file* (Se marca que el archivo que buscamos solo lo podemos leer nosotros, por lo que buscamos con un comando para la busqueda de caracteres)
+(Se tiene que tomar en cuenta por si nuestro terminal está estropeado usar reset).
+Contraseña: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+Nivel 5-6: ssh bandit5@bandit.labs.overthewire.org -p 2220
+find . -type f -size 1033c ! -executable -exec file {} + | grep ASCII 
+cat inhere/maybehere07/.file2
+(En este nivel el archivo tiene tres características, por lo que comprobaremos que las tenga, un comando que busca su tamaño, 
+otro que compruebe que se pueda ejecutar [No debería de poder executarse por ello el signo] y que unicamente sea legible por los humanos).
+Contraseña: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+Nivel 6-7: ssh bandit6@bandit.labs.overthewire.org -p 2220
+find / -type f -user bandit7 -group bandit6 -size 33
+cat /var/lib/dpkg/info/bandit7.password
+(Este es un caso similar solo que esta vez la contraseña se almacena en algún lugar del servidor con la propiedad de usuario bandit7
+y del grupo bandit6 con tamaño de 33 bytes, por lo que el comando es similar al anterior solo que se busca las propiedas de usuario y grupo).
+Contraseña: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+Nivel 7-8: ssh bandit7@bandit.labs.overthewire.org -p 2220
+ls -alps , strings data.txt | grep "millionth"
+(La contraseña esta guardada a un archivo junto la palabra millionth)
+Contraseña: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+Nivel 8-9: ssh bandit8@bandit.labs.overthewire.org -p 2220
+cat data.txt
+(Se verá que se repiten muchas líneas entre miles de lineas, la que buscamos es solo una línea que no se repite).
+sort data.txt | uniq -u
+(El comando busca la unica linea que no se repite del archivo data.txt, ahí está la contraseña).
+Contraseña: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+Nivel 9-10: ssh bandit9@bandit.labs.overthewire.org -p 2220
+strings data.txt | grep "==.*"
+(Debemos buscar entre las lineas las que son legibles para los humanos, con el comando encontramos las palabras y con grep señalamos la busqueda de solo las que tengan "="
+de entre esas lineas se encuentra la contrsaeña, una observación es que de no poner "==.*" y poner "=" nos arroja todas las lineas con caracteres que haya y tengan =).
+Contraseña: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+Nivel 10-11: ssh bandit10@bandit.labs.overthewire.org -p 2220
+base64 -d data.txt
+(De usar cat nos daremos cuenta de que se encuentra una linea con muchos caracteres, de dicha forma no funciona por lo que la salida debe ser con el comando base64).
+Contraseña: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+Nivel 11-12: ssh bandit11@bandit.labs.overthewire.org -p 2220
+cat data.txt
+(La contraseña habrá rotado sus mayúsculas y minísculas 13 veces, se puede hhacer uso de una herramienta).
+Contraseña: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+Nivel 12-13: ssh bandit12@bandit.labs.overthewire.org -p 2220
+cat data.txt , mkdir /tmp/archivo , cp data.txt /tmp/archivo , cd tmp/archivo
+xxd -r data.txt > data , file data , mv data file.gz , gzip -d file.gz , mv file file.bz2
+bzip2 -d file.bz2 , mv file file.gz , gzip -d file.gz , mv file file.tar , tar xf file.tar
+file data5.bin , tar xf data.tar , file  data6.bin , mv data6.bin data.bz , bzip2 -d data.bz
+mv data data.tar , tar xf data.tar , file data8.bin , mv data8.bin data.gz , gzip -d data.gz
+file data , cat data
+(En pocas palabras había que descomprimir un archivo que se comprimió repetida veces).
+Contraseña: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
