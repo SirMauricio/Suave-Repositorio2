@@ -1,0 +1,296 @@
+Comando CMD	Descripción	Versión de Windows
+bitsadmin	Crea y monitorea las cargas y descargas.	10/8/7/Vista
+break	Desactiva la comprobación Ctrl+C en MS-DOS con la que se podían detener procesos en el antiguo sistema operativo. Solo está disponible en Windows por razones de compatibilidad.	Cualquier Win/DOS
+call	Llama a un archivo batch dentro de otro archivo batch. El comando no tiene ningún efecto si no se introduce en un archivo batch, sino directamente en CMD.	Cualquier Win/DOS
+cd	Muestra el directorio actual y permite cambiar a otros directorios. Con el parámetro /D más la unidad y la ruta también puede cambiarse la unidad. Mediante cd puede cambiarse al directorio superior (tiene la misma función que chdir).	Cualquier Win/DOS
+chcp	Cambia la página de código actual (tabla de códigos) o muestra el número de páginas de la página de código actual.	Cualquier Win/DOS
+chdir	Muestra el directorio actual y permite cambiar a otros directorios. Con el parámetro /D más la unidad y la ruta también se puede cambiar la unidad. Mediante chdir puede cambiarse al directorio superior (tiene la misma función que cd).	Cualquier Win/DOS
+choice	Crea una lista de selección: el ejemplo típico es la selección de Sí (S) o No (N) representada como /C SN. Con el parámetro /M puede añadirse un mensaje explicativo para el usuario.	Cualquier Win (excepto XP)/DOS
+clip	Envía el resultado de un comando al portapapeles. Así se puede, por ejemplo, copiar la estructura de los directorios (dir clip) o el contenido de un archivo (clip < nombre de archivo) en el portapapeles.	10/8/7/Vista
+cls	Elimina el contenido de la pantalla.	Cualquier Win/DOS
+cmd	Inicia CMD.EXE.	10/8/7/Vista/XP
+color	Modifica el color del fondo (primer valor) y del texto (segundo valor) de la línea de comandos. Los colores están comprendidos entre 0 (negro) y F (blanco).	10/8/7/Vista/XP
+command	Inicia CMD.COM.	32 bits/DOS
+date	Muestra la fecha actual y permite modificarla. Con el parámetro /T solo se muestra la fecha sin opción de modificarla.	Cualquier Win/DOS
+debug	Inicia Debug, un programa con el que se pueden probar y modificar programas en la terminal.	32 bits/DOS
+dir	Muestra todas las carpetas y archivos dentro del directorio actual. Puede restringirse la salida mediante atributos (/A), simplificar la lista (/B), o mostrar todos los subdirectorios y sus archivos (/S).	Cualquier Win/DOS
+doskey	Crea macros, recupera comandos y procesa la entrada de comandos.	Cualquier Win/DOS
+dosshell	Abre DOS Shell, una herramienta gráfica para la gestión de archivos que en Windows fue reemplazada por Windows Explorer.	95/DOS
+echo	Muestra un mensaje y es utilizado, sobre todo, en scripts y archivos batch.	Cualquier Win/DOS
+edit	Inicia el editor de MS-DOS, que permite crear archivos de texto.	32 bits /DOS
+edlin	Crea y edita archivos de texto en la terminal.	32 bits /DOS
+exit	Pone fin a CMD.EXE o CMD.COM.	Cualquier Win/DOS
+fasthelp	Muestra información útil sobre los comandos.	DOS
+fastopen	Escribe la posición de un programa en una lista específica situada en la memoria y que debe acelerar el inicio del programa.	32 bits/DOS
+find	Busca una cadena de caracteres específica en uno o varios archivos. Para saber la asiduidad con la que aparece la palabra o frase se utiliza el parámetro /C. Al añadir /I, el comando ignora las mayúsculas y las minúsculas en la búsqueda.	Cualquier Win/DOS
+findstr	Encuentra cadenas de caracteres en uno o varios archivos. En comparación con el comando find, este plantea más opciones: se pueden buscar archivos que contengan diferentes términos o buscar una secuencia de palabras exacta usando /C.	10/8/7/Vista/XP
+forcedos	Inicia un programa en el subsistema de MS-DOS en caso de que no fuera reconocido por Windows XP como un programa DOS.	XP (32 bits)
+graftabl	Activa la posibilidad de utilizar los caracteres adicionales de una determinada página de código en el modo gráfico.	32 bits/DOS
+graphics	Inicia un programa con el que pueden imprimirse gráficos.	32 bits/DOS
+help	Muestra un texto de ayuda para un comando específico. También puede utilizarse el comando /?.	Cualquier Win/DOS
+kb16	Modifica la configuración de país del teclado para programas de DOS. Por motivos de compatibilidad solo está incluido en Windows. Reemplaza al antiguo comando keyb.	32 bits
+keyb	Modifica la configuración de país del teclado para programas de DOS. Por motivos de compatibilidad solo está incluido en Windows. En las nuevas versiones de Windows ha sido reemplazado por kb16.	98/95/DOS
+logoff	Cierra la sesión del usuario en Windows y también permite terminar sesiones en los servidores.	10/8/7/Vista/XP
+lpq	Muestra el estado de una cola de impresión para los ordenadores que utilizan un Line Printer Daemon (LPD). Para poder usar el comando en Windows 10, 8, 7 o Vista debe activarse el servicio LPD Print y el monitor del puerto LPR.	Cualquier Win
+lpr	Envía un archivo a un ordenador que utiliza el Line Printer Daemon (LPD). Para poder usar el comando en Windows 10, 8, 7 o Vista, debe activarse el servicio LPD Print y el monitor del puerto LPR.	Cualquier Win
+md	Crea un nuevo directorio en la ruta especificada. Si los directorios ya no existen en la ruta, md los genera automáticamente. Opcionalmente también puede utilizarse el comando mkdir.	Cualquier Win/DOS
+mkdir	Crea un nuevo directorio en la ruta especificada. Si los directorios ya no existen en la ruta, emkdir los genera automáticamente. Alternativamente también puede utilizarse el comando md.	Cualquier Win/DOS
+more	Muestra el contenido de un archivo (por ejemplo, de un archivo de texto) por páginas, pero también puede dividir la salida de otro comando en páginas.	Cualquier Win/DOS
+msg	Envía un mensaje a otro usuario. Pueden escribirse los nombres de usuario en el comando o crear archivos para guardar dichos nombres. Los archivos pueden integrarse en el comando mediante @nombredearchivo.	10/8/7/Vista/XP
+nlsfunc	Proporciona información específica de cada país para la asistencia lingüística.	32 bits/DOS
+ntbackup	Realiza servicios de backup directamente desde la línea de comandos o como parte de archivos o scripts batch.	XP
+path	Especifica la ruta para buscar archivos ejecutables y los muestra.	Cualquier Win/DOS
+pause	Detiene la ejecución en archivos y scripts batch. Mediante un mensaje se le pedirá al usuario que pulse una tecla para continuar.	Cualquier Win/DOS
+popd	Cambia a la carpeta guardada por el comando pushd. El comando es, ante todo, parte de archivos y scripts batch.	10/8/7/Vista
+print	Imprime un archivo de texto. Debe especificarse el dispositivo con el que se desea imprimir.	Cualquier Win/DOS
+prompt	Cambia la visualización del símbolo del sistema.	Cualquier Win/DOS
+pushd	Almacena una ruta específica en un script o en un archivo batch. Con popd puede cambiarse a dicho directorio.	10/8/7/Vista/XP
+qbasic	Inicia Qbasic, un entorno de programación basado en el lenguaje de programación BASIC.	98/95/DOS
+rd	Elimina un directorio, el cual no puede contener ni ocultar archivos. Con el parámetro /S pueden eliminarse árboles de directorios completos. Alternativamente también puede utilizarse el comando rmdir.	Cualquier Win/DOS
+rem	Escribe comentarios en archivos y scripts batch que no se tienen en cuenta en la ejecución.	Cualquier Win/DOS
+rmdir	Elimina un directorio que no puede ni incluir ni ocultar ningún archivo. Con el parámetro /S pueden eliminarse árboles de directorios completos. Alternativamente también puede utilizarse el comando rd.	Cualquier Win/DOS
+runas	Permite a un usuario ejecutar comandos con los derechos de otro usuario. Así, desde una cuenta de usuario normal se puede, por ejemplo, ejecutar comandos como administrador siempre que se conozca la contraseña.	10/8/7/Vista/XP
+scandisk	Inicia Microsoft ScanDisk. El programa analiza soportes de datos en busca de errores.	98/95/DOS
+schtasks	Determina la ejecución de determinados programas y comandos en un momento específico. Con él puedes crear tareas, pero también eliminarlas o modificarlas y visualizar todas las tareas planificadas.	10/8/7/Vista/XP
+set	Muestra las variables de entorno para CMD.EXE y permite configurarlas.	Cualquier Win/DOS
+shift	Cambia la posición de las variables en archivos batch y en scripts.	Cualquier Win/DOS
+shutdown	Apaga el ordenador (/s), lo reinicia (/r) o cierra la sesión del usuario (/l). Se muestra una interfaz de usuario gráfica al introducir el parámetro /i como primera opción en el comando.	10/8/7/Vista/XP
+sort	Lee datos (de un archivo o de un comando) y los muestra de forma ordenada en la línea de comandos, en un archivo nuevo o en otra salida.	Cualquier Win/DOS
+start	Abre una nueva ventana de la terminal en la que puede ejecutarse un programa específico o un comando.	Cualquier Win
+subst	Le asigna una letra de unidad a una ruta y crea, así, una unidad virtual.	Cualquier Win/DOS
+taskkill	Termina una o varias tareas en ejecución, para lo que se tiene que facilitar el ID del proceso (PID) o el nombre de la imagen.	10/8/7/Vista
+tasklist	Enumera todos los procesos en ejecución (también en los ordenadores remotos si se desea). Para ello debe facilitarse el ID del proceso necesario, por ejemplo, para el comando taskkill.	10/8/7/Vista/XP
+time	Muestra la hora actual y permite modificarla. Si se introduce /T como parámetro, la línea de comandos solo muestra la hora y no permite modificarla de forma directa.	Cualquier Win/DOS
+timeout	Detiene un proceso durante un período de tiempo determinado. El comando se utiliza en archivos batch y en scripts. Si se recurre al parámetro /NOBREAK, el comando ignora cualquier entrada de teclado.	10/8/7/Vista
+title	Modifica el título de la terminal. Los espacios están permitidos, pero no así todos los caracteres especiales: por ejemplo, la barra oblicua se interpreta como la introducción a un parámetro.	Cualquier Win/DOS
+tree	Muestra gráficamente la estructura de directorios de una unidad o ruta. Con el parámetro /F se listan todos los archivos en las carpetas. /A se encarga de que solo se utilicen códigos ASCII en la representación gráfica. El comando tiene en cuenta todos los subdirectorios a partir de la ruta especificada. Si no se ofrece una ruta, la carpeta actual será utilizada como salida.	Cualquier Win/DOS
+type	Muestra el contenido de un archivo de texto.	Cualquier Win/DOS
+tzutil	Muestra la zona horaria actual (/g) o la modifica (/s). El parámetro /l sirve de ayuda para especificar los husos horarios válidos.	10/8/7
+ver	Muestra la versión actual de Windows o de MS-DOS.	Cualquier Win/DOS
+
+### Archivos
+Comando CMD	Descripción	Versión de Windows
+append	Determina la ruta en la que se tienen que buscar archivos.	32 bits/DOS
+assoc	Modifica el programa vinculado a una extensión de archivo determinada.	10/8/7/Vista/XP
+attrib	Cambia los atributos de determinados archivos. Con el parámetro +R puede protegerse un archivo, por ejemplo, de posibles cambios.	Cualquier Win/DOS
+cipher	Muestra y modifica el estado del cifrado de los archivos y directorios en particiones NTFS.	10/8/7/Vista/XP
+comp	Compara los contenidos de dos archivos o de dos conjuntos de archivos. El resultado puede representarse como valor decimal (/D) o como carácter ASCII (/A).	10/8/7/Vista/XP
+compact	Muestra y modifica el estado de compresión de los archivos y directorios en particiones NTFS.	10/8/7/Vista/XP
+copy	Copia uno o varios archivos en otro lugar. Además, también es posible unir varios archivos en uno. Como wildcard puede utilizarse el asterisco.	Cualquier Win/DOS
+cscript	Ejecuta scripts a través del Microsoft Script Host. Con la opción /D se activa la depuración de programas (debugging).	Cualquier Win/DOS
+del	Elimina uno o varios archivos. Para eliminar todos los archivos de las subcarpetas puede utilizarse el parámetro /S. Los archivos de solo lectura se eliminan con /F. Como alternativa también puede utilizarse el comando erase.	Cualquier Win/DOS
+deltree	Elimina un directorio y todos los subdirectorios y archivos incluidos en él.	98/95/DOS
+diantz	Comprime archivos sin pérdidas en formato CAB. El comando tiene la misma función que makecab.	7/Vista/XP
+diskcomp	Compara el contenido de dos disquetes.	Cualquier Win (excepto 10)/DOS
+diskcopy	Copia el contenido de un disquete en otro.	Cualquier Win (excepto 10)/DOS
+endlocal	Finaliza el período de validez de los cambios en archivos batch o en scripts. Tras utilizar el comando, los cambios se aplican a todo el sistema y la localización se inicia con setlocal.	10/8/7/Vista/XP
+erase	Tiene la misma función que del.	Cualquier Win/DOS
+exe2bin	Convierte un archivo EXE en uno BIN.	32 bits
+expand	Extrae archivos y carpetas incluidos en archivos CAB.	Cualquier Win (excepto XP de 64 bits)/DOS
+extrac32	Extrae archivos y carpetas comprendidos en archivos CAB. El programa forma parte de Internet Explorer, pero también puede emplearse en la línea de comandos.	Cualquier Win
+extract	Extrae archivos y carpetas incluidos en archivos CAB. Las nuevas versiones de Windows utilizan expand.	98/95
+fc	Compara dos archivos individuales o dos conjuntos de archivos entre sí y muestra sus diferencias.	Cualquier Win/DOS
+for	Especifica que se debe ejecutar un comando determinado para cada archivo de un conjunto de archivos. El comando se utiliza, sobre todo, en archivos batch y de script.	Cualquier Win/DOS
+forfiles	Escoge uno o varios archivos y ejecuta un comando relacionado con dichos archivos. Se utiliza, sobre todo, para archivos batch y de script.	10/8/7/Vista
+ftype	Determina un programa con el que debe abrirse un tipo de archivo específico.	10/8/7/Vista/XP
+goto	Hace que la ejecución de un programa batch salte a una línea (marca) específica.	Cualquier Win/DOS
+if	Representa una sentencia condicional y como tal, ejecuta expresiones en archivos batch solo bajo ciertas condiciones. Puede ampliarse por medio de not en caso de que los comandos no puedan ejecutarse bajo ciertas condiciones.	Cualquier Win/DOS
+makecab	Comprime archivos sin pérdidas en formato CAB. Alternativamente también puede utilizarse el comando diantz.	10/8/7/Vista/XP
+mklink	Crea un enlace simbólico a un archivo. Con /D también pueden crearse enlaces con directorios. /H permite crear un enlace fijo en lugar de uno simbólico.	10/8/7/Vista
+move	Desplaza uno o varios archivos de un directorio a otro y también puede modificar el nombre de los directorios. Por defecto, el comando sobrescribe otros archivos con el mismo nombre al mover archivos a su destino. Para evitarlo se utiliza el parámetro /-Y.	Cualquier Win/DOS
+openfiles	Muestra y separa los archivos y las carpetas abiertos de un sistema.	10/8/7/Vista/XP
+recover	Restablece los archivos legibles que se encuentran en un soporte de datos.	10/8/7/Vista/XP
+ren	Modifica el nombre de un archivo específico, pero el directorio y la unidad no pueden modificarse. También puede utilizarse el comando rename.	Cualquier Win/DOS
+rename	Tiene la misma función que ren.	Cualquier Win/DOS
+replace	Reemplaza el archivo o los archivos seleccionados por uno o varios archivos. Con el parámetro /S también se sustituyen los archivos de las subcarpetas y con /U solo se reemplazan archivos si la otra versión es más actual. El parámetro /A permite que los usuarios inserten nuevos archivos simultáneamente en el directorio de destino. Este parámetro no es compatible con /S y /U.	Cualquier Win/DOS
+robocopy	Posibilita la llamada copia de archivos robusta. Se trata de una versión ampliada de copy y xcopy, de modo que con robocopy pueden transferirse datos con éxito incluso cuando hay interrupciones en la red. En total existen 72 parámetros con los que puede personalizarse el comando de copia.	10/8/7/Vista
+rsm	Gestiona los medios en dispositivos extraíbles. Se utiliza en archivos batch y en scripts para dar soporte a programas que no utilizan la Removable Storage API.	Vista/XP
+setlocal	Limita el ámbito de validez de los cambios en archivos batch o en scripts. Con el comando, los cambios solo se aplican a estos archivos. La localización se inicia con endlocal.	10/8/7/Vista/XP
+share	Instala file sharing y file locking.	32 bits/DOS
+sxstrace	Inicia la WinSxs Tracing Utility, una herramienta de diagnósticos de programación.	10/8/7/Vista
+takeown	Recupera los derechos de acceso de los administradores a un archivo y que se han perdido al reasignar a un usuario.	10/8/7/Vista
+undelete	Deshace la eliminación de un archivo.	DOS
+verify	Al activarse comprueba que los archivos se hayan escrito correctamente en un soporte de datos. Este ajuste está desactivado por defecto en la configuración.	Cualquier Win/DOS
+where	Encuentra archivos que se corresponden con un esquema de búsqueda específico dentro del que pueden emplearse los símbolos * y ?.	10/8/7/Vista
+xcopy	Copia archivos y estructuras de directorio completas, para lo que el comando ofrece numerosas opciones adicionales. Así puede especificarse, por ejemplo, que solo se copien archivos anteriores a una fecha determinada (/D) y, asimismo, que también se sobrescriban archivos protegidos contra escritura (/R).	Cualquier Win/DOS
+
+### Sistema
+Comando CMD	Descripción	Versión de Windows
+at	Permite iniciar comandos y programas en una fecha concreta. Con el parámetro /every:fecha[,…] pueden establecerse citas regularmente.	10/8/7/Vista/XP
+auditpol	Muestra directrices de monitorización actuales.	10/8/7/Vista
+backup	Crea copias de seguridad de archivos que pueden restablecerse con restore. Este comando ha sido reemplazado por msbackup.	DOS
+bcdboot	Crea y repara archivos de inicio.	10/8/7
+bcdedit	Permite que los usuarios realicen cambios en la configuración de arranque y es una nueva variante de bootcfg.	10/8/7/Vista
+bdehdcfg	Prepara un disco duro para el cifrado de disco con BitLocker.	10/8/7
+bootcfg	Crea, edita o muestra el contenido de boot.ini (desde Windows 7 está incluido en CMD, pero ha perdido su función, puesto que boot.ini ya no se utiliza para las opciones de inicio, sino que debe recurrirse a bcdedit).	10/8/7/Vista/XP
+bootsect	Adapta el código de inicio maestro (Master Boot Code) de manera que sea compatible con el Windows Boot Manager o con el NT Loader. Solo puede iniciarse en Windows 7 y Vista a través de la recuperación del sistema.	10/8/7/Vista
+cacls	Edita y muestra la lista de control de acceso (Acces Control List, ACL), que establece los derechos de acceso. Este comando está obsoleto, por lo que en las nuevas versiones de Windows se sustituye por icacls.	10/8/7/Vista/XP
+chkdsk	Revisa y repara (con el parámetro /R) un soporte de datos.	Cualquier Win/DOS
+chkntfs	Modifica o muestra la comprobación del soporte informático en el inicio.	10/8/7/Vista/XP
+cmdkey	Es capaz de mostrar (/list), crear (/add) y eliminar (/delete) datos de registro.	10/8/7/Vista
+convert	Convierte particiones de FAT/FAT32 en NTFS.	10/8/7/Vista/XP
+ctty	Modifica la entrada y salida estándares para el sistema.	98/95/DOS
+dblspace	Crea o configura unidades comprimidas. Hay una versión más actual del comando que se llama drvspace.	98/95/DOS
+defrag	Desfragmenta todas las unidades o algunas específicas. Para monitorizar el progreso debe utilizarse /U y para visualizar estadísticas de evaluación tras la desfragmentación se ha de recurrir al parámetro /V.	Cualquier Win/DOS
+diskpart	Gestiona, crea y elimina particiones en los discos duros.	10/8/7/Vista/XP
+diskperf	Permite que los usuarios controlen el Disk Performance Counter a distancia.	10/8/7/Vista
+diskraid	Gestiona sistemas RAID.	10/8/7/Vista
+dism	Revisa imágenes de Windows y las integra.	10/8/7
+dispdiag	Crea un archivo en el directorio actual en el que pueden encontrarse datos sobre la pantalla.	10/8/7/Vista
+dosx	Inicia la interfaz de modo protegido para DOS (DOS Protected Mode Interface) en la que se permiten programas MS-DOS con más de 640 KB de memoria. Solo está disponible para soportar programas de DOS más antiguos.	32 bits
+driverquery	Crea una lista con todos los controladores de dispositivos instalados.	10/8/7/Vista/XP
+drvspace	Crea o configura unidades comprimidas. Existe una versión más antigua del comando llamada dblspace.	98/95/DOS
+emm386	Le otorga a DOS más de 640 KB de almacenamiento.	98/95/DOS
+esentutl	Gestiona bases de datos en el Extensible Storage Engine.	10/8/7/Vista/XP
+eventcreate	Crea una entrada (identificador y mensaje) en un registro de eventos.	10/8/7/Vista/XP
+eventtriggers	Configura y muestra el event trigger (desencadenador de eventos).	XP
+fdisk	Crea, elimina y gestiona particiones en el disco duro. En las versiones de Windows más actuales se usa diskpart.	98/95/DOS
+fltmc	Posibilita que los usuarios gestionen y visualicen controladores de filtros.	10/8/7/Vista/XP
+fondue	Instala características de Windows adicionales. El comando es la abreviatura para la herramienta subyacente Features on Demand User Experience Tool.	10/8
+format	Formatea una unidad en el sistema de archivos especificado por el usuario.	Cualquier Win/DOS
+fsutil	Cuenta con numerosas funciones que afectan al sistema de archivos como, por ejemplo, la eliminación de unidades.	10/8/7/Vista/XP
+hwrcomp	Compila diccionarios de creación propia para el reconocimiento de escritura a mano.	10/8/7
+hwrreg	Instala un diccionario compilado para el reconocimiento de escritura a mano.	10/8/7
+icacls	Edita y muestra la lista de control de acceso, que define los derechos de acceso.	Una versión más antigua de este comando es cacls.10/8/7/Vista
+ktmutil	Inicia el Kernel Transaction Manager.	10/8/7/Vista
+label	Modifica o elimina el nombre de una unidad.	Cualquier Win/DOS
+lh	Carga un programa determinado en el área de memoria superior (UMB) y tiene la misma función que loadhigh.	98/95/DOS
+licensingdiag	Genera un archivo XML y uno CAB que contienen información sobre la licencia de producto de Windows.	10/8
+loadfix	Garantiza que se cargue y se ejecute un programa por encima de los primeros 64 KB de memoria.	32 bits/DOS
+loadhigh	Tiene la misma función que lh.	98/95/DOS
+lock	Bloquea una unidad de modo que un solo programa previamente seleccionado por el usuario pueda acceder a esta.	98/95
+lodctr	Actualiza todas las entradas del registro que tengan que ver con indicadores de rendimiento.	Cualquier Win
+logman	Crea y gestiona sesiones de seguimiento de eventos y registros de rendimiento.	10/8/7/Vista/XP
+manage-bde	Configura el cifrado de unidades con BitLocker. Con -on se cifran unidades y con -off vuelven a descifrarse poniendo fin, además, a la protección con Bitlocker.	10/8/7
+mem	Muestra información sobre la memoria e indica qué programas se han cargado en esta.	32 bits/DOS
+memmaker	Optimiza la memoria.	98/95/DOS
+mode	Configura dispositivos de sistema, sobre todo en puertos COM o LPT.	Cualquier Win/DOS
+mofcomp	Analiza archivos en Managed Object Format (MOF) y añade las clases y las instancias para el repositorio WMI.	Cualquier Win
+mountvol	Crea, elimina y muestra puntos de montaje para unidades.	10/8/7/Vista/XP
+msav	Inicia Microsoft Antivirus.	DOS
+msbackup	Inicia Microsoft Backup, por lo que reemplaza a los comandos backup y a restore.	DOS
+mscdex	Carga el soporte de CD-ROM para MS-DOS.	98/95/DOS
+msd	Inicia el programa Microsoft Diagnostics con el que se pueden visualizar los datos del sistema.	DOS
+msiexec	Inicia el instalador de Windows, con el que se puede instalar y configurar el sistema.	10/8/7/Vista/XP
+muiunattend	Inicia un proceso de configuración automatizado para la interfaz de usuario multilingüe (Multilingual User Interface, MUI).	10/8/7/Vista
+netcfg	Instala el sistema operativo minimizado Microsoft Windows PE.	10/8/7/Vista
+ocsetup	Instala funciones de Windows adicionales.	8/7/Vista
+pentnt	Reconoce los errores de división de punto flotante (floating point division errors) en chips Pentium, inicia la emulación de punto flotante (floating point emulation) y desactiva el hardware de punto flotante (floating point hardware).	XP
+pkgmgr	Instala, desinstala y configura paquetes y funciones para Windows.	10/8/7/Vista
+pnpunattend	Automatiza la instalación de controladores de dispositivos.	10
+pnputil	Instala dispositivos plug and play desde la terminal.	10/8/7/Vista
+power	Usa el estado de reposo (idle) de un procesador para reducir el coste energético.	98/95/DOS
+powercfg	Permite al usuario cambiar las opciones de energía del ordenador y controlar los planes de ahorro energético.	10/8/7/Vista/XP
+pwlauncher	Configura las opciones de arranque para Windows To Go, por lo que también es posible inicializar Windows desde una memoria USB.	10/8
+qprocess	Proporciona información sobre los procesos en ejecución.	10/8/7/Vista
+query	Muestra el estado de un servicio determinado.	10/8/7/Vista
+quser	Proporciona información sobre los usuarios conectados.	10/8/7/Vista
+reagentc	Configura el entorno de recuperación de Windows a través del que se puede reparar la instalación del sistema operativo.	10/8/7
+recimg	Crea una imagen personalizada de Windows para restaurar el sistema.	8
+reg	Gestiona el registro desde el símbolo del sistema. Así, los usuarios pueden crear (reg add) y eliminar (reg delete) nuevas claves.	10/8/7/Vista/XP
+regini	Cambia los permisos para el registro.	10/8/7/Vista/XP
+register-cimprovider	Registra un proveedor de modelo de información común (Common Information Model Provider, CIM Provider) en Windows.	10/8
+regsvr32	Inscribe un archivo DLL en el registro.	10/8/7/Vista/XP
+relog	Crea nuevos protocolos de indicadores de rendimiento a partir de los datos de los protocolos ya existentes.	10/8/7/Vista/XP
+repair-bde	Repara y descifra unidades defectuosas cifradas con BitLocker. Los archivos deben almacenarse en una unidad de repuesto.	10/8/7
+reset	Restablece una sesión. Alternativamente también puede utilizarse el comando rwinsta.	10/8/7/Vista/XP
+restore	Restaura las copias de seguridad creadas por el comando backup, que ha sido reemplazado por msbackup.	DOS
+rwinsta	El comando tiene la misma función que reset.	10/8/7/Vista/XP
+sc	Gestiona servicios en los que el comando establece conexión con el Service Controller.	10/8/7/Vista/XP
+scanreg	Repara el registro y permite crear una copia de seguridad de este.	98/95
+sdbinst	Recurre a bases de datos (SBD) personalizadas.	10/8/7/Vista/XP
+secedit	Analiza la configuración de seguridad comparando la configuración actual con plantillas. Este comando también permite configurar, importar y exportar ajustes.	10/8/7/Vista/XP
+setver	Especifica un número de versión de MS-DOS que le será transferido a un programa, incluso cuando este no se corresponda con la versión real.	32 bits/DOS
+setx	Crea o modifica variables de entorno en el entorno de usuario o del sistema.	10/8/7/Vista
+sfc	Comprueba los archivos de sistema más importantes y protegidos. Las versiones incorrectas se sustituyen por las correctas.	10/8/7/Vista/XP
+smartdrv	Inicia y gestiona el programa de caché de disco duro SMARTDrive.	98/95/DOS
+sys	Copia archivos de sistema de MS-DOS y el intérprete de comandos en otra unidad, la cual se convertirá en una unidad de arranque.	98/95/DOS
+systeminfo	Muestra datos sobre la instalación de Windows, incluidos todos los paquetes de servicios instalados. Dichos datos pueden referirse tanto al sistema local como al ordenador remoto.	10/8/7/Vista/XP
+tpmvscmgr	Crea y elimina tarjetas inteligentes virtuales (Virtual Smart Cards) TPM, que se cifran basándose en un módulo de plataforma de confianza (Trusted Platform Module).	10/8
+tracerpt	Procesa logs o datos en tiempo real generados durante el seguimiento de programas informáticos.	10/8/7/Vista/XP
+typeperf	Muestra datos sobre los indicadores de rendimiento o los escribe en un archivo.	10/8/7/Vista/XP
+unformat	Deshace el formateo de una unidad mediante el comando format.	DOS
+unlock	Desbloquea una unidad bloqueada con lock.	98/95
+unlodctr	Elimina tanto los nombres como las explicaciones para los indicadores de rendimiento ampliables en el registro de Windows.	10/8/7/Vista/XP
+vaultcmd	Crea, elimina y muestra datos de registro almacenados.	10/8/7
+vol	Muestra el nombre y el número de serie de una unidad.	Cualquier Win/DOS
+vsafe	Inicia el antivirus VSafe.	DOS
+vssadmin	Gestiona los servicios de instantáneas de volumen con los que pueden almacenarse diferentes estados de versiones (snapshots) de las unidades.	10/8/7/Vista/XP
+wbadmin	Crea backups del sistema operativo y ofrece información sobre las copias de seguridad creadas.	10/8/7/Vista
+wevtutil	Gestiona registros de eventos y archivos de registro de eventos.	10/8/7/Vista
+whoami	Proporciona información sobre el usuario actual. Con el parámetro /GROUP se obtiene información adicional sobre la pertenencia a un grupo.	10/8/7/Vista
+winmgmt	Gestiona repositorios WMI, permitiendo así la creación de copias de seguridad (/backup).	Cualquier Win
+winsat	Evalúa numerosos factores del sistema, por ejemplo, el rendimiento del procesador o las capacidades gráficas.	10/8/7/Vista
+wmic	Inicia el instrumental de administración de Windows en la línea de comandos. Con ello pueden modificarse numerosos ajustes de Windows tanto a nivel local como en ordenadores remotos.	10/8/7/Vista/XP
+xwizard	Registra datos de Windows en forma de archivos XML.	10/8/7
+
+### Red
+Comando CMD	Descripción	Versión de Windows
+arp	Muestra y modifica las entradas incluidas en la caché del protocolo de resolución de direcciones (Address Resolution Procol, ARP).	Cualquier Win
+atmadm	Muestra datos sobre el modo de transferencia asíncrona (Asynchronous Transfer Mode, ATM).	XP
+certreq	Gestiona y establece condiciones para el registro de certificados en organismos de certificación.	10/8/7/Vista
+certutil	Gestiona servicios de autenticación de certificados.	10/8/7/Vista
+change	Modifica la configuración de un servidor de terminales y se utiliza junto a los parámetros logon, port o user. Reemplaza a los comandos chglogon, chgport y chgusr.	10/8/7/Vista
+checknetisolation	Prueba las apps de la Windows Store en la capacidad de tu red.	10/8
+chglogon	Activa, desactiva o elimina los logins en las sesiones del servidor de terminales.	10/8/7/Vista
+chgport	Muestra o modifica la asignación de puertos COM en servidores de terminales para que sean compatibles con DOS.	10/8/7/Vista
+chgusr	Cambia el modo de instalación en un servidor de terminales.	10/8/7/Vista
+cmstp	Instala o desinstala perfiles para el gestor de la conexión.	10/8/7/Vista/XP
+djoin	Crea una nueva cuenta de equipo en los servicios de dominio de Active Directory (Active Directory Domain Services, AD DS).	10/8/7/Vista
+finger	Proporciona información sobre los usuarios en dispositivos remotos que utilizan el servicio finger.	10/8/7/Vista/XP
+ftp	Transfiere datos a un servidor FTP o de este a un ordenador. El comando también ofrece opciones adicionales, de modo que así puede activarse la depuración de programas o debugging con -d.	Cualquier Win/DOS
+getmac	Muestra la dirección MAC de todos los adaptadores de red. El formato de salida (table, list, CSV) se especifica con /FO. Con /S también puede utilizarse el comando en sistemas remotos.	10/8/7/Vista/XP
+gpresult	Muestra información sobre las directivas de grupo.	10/8/7/Vista/XP
+gpupdate	Actualiza la información sobre las directivas de grupo.	10/8/7/Vista/XP
+hostname	Ofrece el nombre del host actual.	10/8/7/Vista/XP
+interlnk	Conecta dos ordenadores por medio de conexión paralela o en serie para compartir archivos o impresoras.	DOS
+intersvr	Inicia un servidor Interlnk y transfiere datos de un ordenador a otro mediante una conexión paralela o en serie.	DOS
+ipconfig	Facilita información sobre la IP de cualquier adaptador de red utilizado. Con este comando también pueden liberarse direcciones (/release) o renovarse (/renew). /flushdns permite vaciar la caché DNS.	Cualquier Win/DOS
+ipxroute	Modifica y muestra información sobre tablas de enrutamiento IPX.	XP
+irftp	Transfiere archivos a través de una conexión por infrarrojos si hubiera una disponible.	10/8/7/Vista
+iscsicli	Gestiona iSCSI, que permite conexiones con el protocolo SCSI.	10/8/7/Vista
+klist	Muestra todos los tickets con los que es posible autenticarse en el servicio Kerberos y también permite eliminarlos (purge).	10/8/7
+ksetup	Configura una conexión al servidor Kerberos.	10/8/7
+mount	Permite compartir redes en el sistema de archivos de red (Network File System). Para utilizar el comando deben activarse los servicios NFS.	7/Vista
+mrinfo	Ofrece información sobre el router.	10/8/7/Vista/XP
+nbtstat	Muestra estadísticas y datos sobre conexiones TCP/IP en ordenadores remotos.	10
+net	Configura y muestra ajustes de red.	Cualquier Win
+net1	Configura y muestra ajustes de red. En su lugar, se recomienda utilizar net, pues el comando net1 solo fue concebido como solución temporal para problemas Y2K.	10/8/7/Vista/XP
+netsh	Inicia el shell de red con el que pueden realizarse ajustes de red para ordenadores locales y remotos.	10/8/7/Vista/XP
+netstat	Muestra estadísticas y datos sobre conexiones TCP/IP en el ordenador local.	Cualquier Win
+nfsadmin	Gestiona servidores y clientes NFS (para poder utilizar el comando deben activarse primero los servicios de NFS en Windows).	7/Vista
+nltest	Muestra información sobre canales seguros en los servicios de dominio de Active Directory (Active Directory Domain Services, AD DS) y comprueba las conexiones.	10/8/7
+nslookup	Envía una solicitud DNS sobre una IP o un nombre de host al servidor DNS predeterminado. Alternativamente puede indicarse un servidor DNS diferente.	10
+ntsd	Lleva a cabo la depuración (debugging).	XP
+pathping	Proporciona información sobre la redirección y pérdida de paquetes durante el envío a través de una red y también especifica la latencia.	10/8/7/Vista/XP
+ping	Envía una solicitud de eco mediante el protocolo de mensajes de control de Internet (Internet Control Message Protocol, ICMP) a un host específico para comprobar que está disponible y ofrece, además, la duración del eco. Con -t pueden enviarse señales ping de forma ininterrumpida. Para poder visualizar una estadística sobre esta acción presiona las teclas Ctrl + Pausa/Inter. Puedes cancelar el proceso con Ctrl+C.	Cualquier Win
+qappsrv	Muestra todos los ordenadores remotos de la red.	10/8/7/Vista/XP
+qwinsta	Proporciona información sobre las sesiones de escritorio remoto abiertas.	10/8/7/Vista
+rasautou	Gestiona direcciones AutoDialer.	10/8/7/Vista/XP
+rasdial	Inicia y finaliza conexiones de red para clientes de Microsoft.	10/8/7/Vista/XP
+rcp	Copia archivos de un ordenador Windows en un servidor en el que se está ejecutando un demonio RSDH y viceversa.	7/Vista/XP
+rdpsign	Firma un archivo de protocolo de escritorio remoto (Remote Desktop Protocol, RDP).	10/7
+rexec	Ejecuta comandos en un ordenador remoto en el que se está ejecutando un demonio rexec.	Vista/XP
+route	Muestra la tabla de enrutamiento y permite modificar (change), añadir (add) o eliminar (delete) entradas.	Cualquier Win
+rpcinfo	Envía una llamada a procedimiento remoto (Remote Procedure Call, RPC) a un servidor RPC. El resultado muestra los programas en el ordenador remoto (para poder utilizar el comando deben activarse los servicios de NFS en Windows).	7/Vista
+rpcping	Envía un ping vía llamada a procedimiento remoto (Remote Procedure Call, RPC) a un servidor y comprueba si es posible establecer así una conexión.	10/8/7/Vista
+rsh	Ejecuta comandos en ordenadores remotos en los que está funcionando el programa de Unix Remote Shell (RSH).	7/Vista/XP
+setspn	Crea, elimina y modifica SPN, que hace referencia a identificadores únicos para los servicios de una red que utiliza la autenticación de Kerberos.	10/8/7
+shadow	Supervisa la sesión en un ordenador remoto y con él el usuario puede controlar activamente dicho ordenador remoto.	7/Vista/XP
+showmount	Proporciona información sobre sistemas de archivos NFS. Para utilizar el comando, deben activarse previamente los servicios NFS en Windows.	7/Vista
+tcmsetup	Activa o desactiva un cliente para la Telephony Application Programming Interface (TAPI), una interfaz de programación para aplicaciones de telefonía.	10/8/7/Vista/XP
+telnet	Permite la comunicación con otro ordenador que también utilice el protocolo Telnet.	Cualquier Win/DOS
+tftp	Permite el intercambio de datos entre el ordenador local y un servidor que soporte el Trivial File Transfer Protocol (TFTP). Para poder utilizar el comando debe estar activado el cliente TFTP en las opciones del sistema.	10/8/7/Vista/XP
+tlntadmn	Gestiona un servidor Telnet en un ordenador local o remoto. Para utilizar el comando deben activarse las funciones del servidor Telnet en las opciones del sistema.	8/7/Vista/XP
+tracert	Hace el seguimiento de un paquete de datos a través de la red hasta que llega a un servidor. No solo se comprueba si el paquete llega y el tiempo que necesita para ello, sino que también se registran los saltos que este hace por el camino. Todos los paquetes tienen un determinado tiempo de vida (Time To Live, TTL) que aumenta paso a paso a raíz del comando.	Cualquier Win
+tscon	Conecta la sesión actual del usuario local con una sesión en un ordenador remoto.	10/8/7/Vista/XP
+tsdiscon	Finaliza la conexión entre una sesión de usuario local y la de un ordenador remoto.	10/8/7/VistaXP
+tskill	Termina un proceso en un ordenador remoto.	10/8/7/Vista/XP
+tsshutdn	Apaga o reinicia un servidor de terminales remoto. Si el ordenador correspondiente lo permite, este puede apagarse completamente de esta manera.	XP
+umount	Elimina unidades de sistema de archivos de red (NFS) integradas. Para utilizar el comando deben activarse las funciones NFS en el panel de control del sistema.	7/Vista
+w32tm	Gestiona el servicio de hora de Windows con el que se sincronizan la fecha y la hora en todos los ordenadores bajo un dominio AD DS.	10/8/7/Vista/XP
+waitfor	Envía o espera a una señal. Si esta no se ha de enviar a todos los ordenadores de un dominio, sino a uno específico, se utiliza el parámetro /S. Este comando permite sincronizar los ordenadores de una misma red entre sí.	10/8/7/Vista
+wecutil	Crea y administra suscripciones para eventos, los cuales son reenviados por fuentes de eventos remotas que soportan el protocolo de gestión WS.	10/8/7/Vista
+winrm	Administra conexiones seguras entre ordenadores locales y remotos a través del protocolo de gestión WS.	10/8/7/Vista
+winrs	A través de una conexión segura permite acceder a las líneas de comandos de un ordenador remoto y realizar cambios. Para desactivar el cifrado debe recurrirse a –un.	10/8/7/Vista
+wsmanhttpconfig	Gestiona las funciones del Windows Remote Management (winrm).	10/8/7/Vista
