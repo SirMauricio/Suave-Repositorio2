@@ -1,0 +1,24 @@
+Nivel 1 echo Hello world
+Nivel 2: pwd
+Nivel 3 pwd | ls
+Nivel 4 ls | cat access.log
+Nivel 5 ls | tale -5 access.log
+Nivel 6 touch !/bin/bash take-the-command-challenge
+Nivel 7 mkdir -p tmp/files
+Nivel 8 cp take-the-command-challenge tmp/files
+Nivel 9 mv take-the-command-challenge tmp/files
+Nivel 10 ln -s tmp/files/take-the-command-challenge take-the-command-challenge
+Nivel 11 rm -r * .*
+Nivel 12 find . -name "*.doc" -type f -delete
+Nivel 13 grep GET access.log
+Nivel 14 grep -lr 500
+Nivel 15 ls
+Nivel 16 grep -rh 500
+Nivel 17 grep -or ^[0-9]
+Nivel 18 ls -s | wc -l
+Nivel 19 cat acces.log*
+Nivel 20 grep "GET"* | wc -l
+Nivel 21 sed ´s/;/\n/g´ split-me.txt
+Nivel 22 echo {1.. 100}
+Nivel 23 sed -i ´chalenge are dificult´ **/*.txt
+Nivel 24 paste -sd* sum* | bc
