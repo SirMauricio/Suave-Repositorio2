@@ -1,0 +1,8 @@
+Rutas relativas
+Las rutas relativas indican el camino para encontrar un elemento, pero basándonos en el directorio desde el que se ejecuta la orden. Quiere decir que la ruta relativa es donde nos ecnontramos posicionados.
+Para saber como usarlas es importante de donde estamos pertiendo o en que ruta estamos, se puede saber con el comando pwd para localizar la ruta actual, usar cd para accesar a otra ruta.
+Si me encuentro en el directorio /home y quisiera moverme al directorio /home/usuario/carpeta1 debería indicar el camino hasta donde quiero ir partiendo desde donde me encuentro.
+
+Ruta absoluta
+La ruta absoluta corresponde a la jerarquía estandar de directorio FHS. Para indicar o para usar la ruta absoluta se debe indicar primero por las rutas que se deben pasar.
+La forma correcta de utilizar una ruta absoluta es indicarle el camino desde el directorio raiz (/) hasta donde se encuentra el directorio a donde nos queremos trasladar, independientemente de donde nos encontremos.
