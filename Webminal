@@ -1,0 +1,130 @@
+//Comandos de las lecciones de Webminal.
+
+//Lesson 1//
+pwd
+//Imprime en el directorio actual.
+
+mkdir dir1
+//Crea un directorio llamado "dir1"
+
+mkdir -vp dir2/dir3/dir4
+//Creamos de forma recursiva directorios uno tras otro dentro del que se indica, aparte la opcion -p crea directorios principales para dir4 que es el ultimo directorio.
+
+ls
+//Lista los directorios de la ruta actual.
+
+ls -R
+//Lista los directorios de forma recursiva gracias a -R dejando hacerse ver dir3 y dir4 que estaban dentro de otros directorios.
+
+cd dir2
+//Nos permite movernos al directorio que indicamos (dir2) o en todo caso al siguiente en la ruta actual.
+
+cd ..
+//Nos permite retroceder del directorio actual.
+
+//Lesson 2//
+
+touch file.txt
+//Permite crear un archivo con el nombre file1.tx tipo txt.
+
+dir 
+//Lista los archivos, también tal y como lo haría ls -C -b.
+
+clear
+//Limpia la terminal.
+
+echo "hello"
+//echo Permite imprimir mensajes en la terminal, en este caso la palabra "hello" 
+
+echo "hello" > hello.txt
+//De esta forma podemos imprimir un mensaje y guardarlo en un nuevo archivo creado llamado hello.txt, si el archivo no existe se crea.
+
+echo "linux >> hello.txt
+//Se usa el >> porque el archivo hello ya existe y se quieren imprimir más palabras en dicho archivo, por ello se usa esa sintaxis, de lo contrario se sobreescribe el mismo archivo.
+
+cat hello.txt
+//Muestra el contenido del archivo hello.txt
+
+head -2 hello.txt
+//head permite mostrar las primeras lineas especificadas (en este caso las primeras 2) del archivo hello.txt
+
+head hello.txt
+//De esta forma se indica mostrar las primeras 10 lineas (que es lo predeterminado) de no especificar cuales.
+
+tail -2 hello.txt
+//tail permite mostrar las ultimas líneas especificadas (Las ultimas 2) del archivo hello.txt
+
+tail hello.txt
+//De esta forma se indica mostrar las ultimas 10 lineas (que es lo predeterminado) de no especificar cuales.
+
+stat hello.txt
+//Indica y muestra las especificaciones del archivo hello.txt De ser un directorio en la terminal lo indica.
+
+//Lesson 3//
+
+du
+//Muestra el uso del directorio actual en el disco.
+
+du -xh ~
+//Permite mostrar el espacio del disco que usa el direcotrio en lenguaje que un humano pueda leer (h) y filtrando archivos fuera del programma (x).
+
+cp -v hello.txt dir2
+//Copia el archivo hello.txt en el direcotorio dir2.
+
+cp -v hello.txt dir2/file2.txt
+//Esto hace que se copie el archivo hello.txt en dir2 pero al mismo tiempo que lo renombramos file2.txt.
+
+cp  -vr dir2/*.txt dir2/dir3
+//Copiará todos los archivos con terminación .txt de dir2 en dir3.
+
+md5sum
+//Muestra la suma de comprobación calculada para un archivo, puede usarse para demostrar el estado de un archivo y saber si no está dañado o corrupto.
+ 
+ mv hello.txt dir2/dir3/dir4/hi.txt
+ //Mueve el archivo hello.txt y con esa sintaxis lo pone en dir4 renombrando el archivo a hi.txt La diferencia de cp y mv es que el cp es un copia y pega mientras que mv solo se encarga de mover los archivos a directorios sin crear una segunda copia.
+ 
+ ln  dir2/dir3/dir4/hi.txt hello
+ //ln Crea un link de vinculación que por defecto es un hardlink que es un enlace que apunta a dos nombres diferentes.
+ 
+ ln -s  dir2/dir3/dir4/hi.txt  softlink
+ //La opción -s crea un softlink, si se revisa con stat se encontrará que la consola indica que es un enlace. En este caso  el softlink solo indica un nombre, es más un atajo.
+ 
+ rm -i file2.txt
+ //Elimina un archivo en este caso file2.txt del direcotrio donde se encuentra.
+ 
+ rm -ri dir50/*
+ //Elimina un directorio con la opción -r pues de lo contrario para poder eliminar un directorio primero se debe eliminar todo su contenido.
+ 
+ rm -rf junk/*
+ //La opción -rf en rm eliminará sin pedir autorización el archivo o directorio seleccionado.
+ 
+ ps
+ //Muestra la salida de los procesos que se están ejecutando.
+ 
+ sleep 60 &
+ //Creamos un nuevo proceso llamado sleep.
+ 
+ kill 12345
+ //Se usa kill para matar el proceso remplazando su ID por 12345 para detenerla.
+ 
+ kill -9 12345
+ //Para matar de golpe el proceso se usa el -9 para ahogar el proceso.
+ 
+ killall sleep
+ //Mata todos los procesos con el mismo nombre y comprueba si los procesos fueron eliminados.
+ 
+ pidof -s bash
+ //Para encontrar la ID de un proceso se usa pid.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
