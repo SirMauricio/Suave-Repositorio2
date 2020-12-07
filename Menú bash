@@ -1,0 +1,27 @@
+clear
+echo "----------MENU DE OPCIONES----------"
+echo ""
+PS3='Ingrese su opcion a ejecutar : '
+options=("Bandit. 1" "Command. 2" "Webminal. 3" "Hackerrank. 4" "Windows. 5" "Salir")
+select opt in "${options[@]}"
+do
+case $opt in
+"Bandit. 1")
+vi Bandit.txt
+;;
+"Command. 2")
+vi Command.txt
+;;
+"Webminal. 3")
+vi Webminal.txt
+;;
+"Hackerrank. 4")
+vi Hackerrank.sh
+;;
+"Windows. 5")
+vi Windows.txt
+;;
+"Salir")
+break
+;;
+*) echo invalid option;;
