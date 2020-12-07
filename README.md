@@ -8,3 +8,7 @@ La liga al video en asciinema es : https://asciinema.org/a/9cdROpCkuTsgRWuaeaacO
 
 ### Prueba de asciinema con Bandit
 [![asciicast](https://asciinema.org/a/pcnWmKl5atqdYr9ZmzimBtWJE.svg)](https://asciinema.org/a/pcnWmKl5atqdYr9ZmzimBtWJE)
+
+### Menu en Bash
+Creación de un menú en bash con opciones para ver las tareas realizadas.
+[![asciicast](https://asciinema.org/a/pvARAuDP25sP4bzxXVmdHtgDc.svg)](https://asciinema.org/a/pvARAuDP25sP4bzxXVmdHtgDc)
